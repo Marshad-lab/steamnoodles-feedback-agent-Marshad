@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 if not api_key:
-    raise ValueError("⚠️ Please set your OPENAI_API_KEY environment variable.")
+    raise ValueError("Please set your OPENAI_API_KEY environment variable.")
 
 # Initialize LLM
 llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
@@ -61,3 +61,4 @@ if __name__ == "__main__":
     start = input("Enter start date (YYYY-MM-DD): ")
     end = input("Enter end date (YYYY-MM-DD): ")
     sentiment_trend(start, end)
+
