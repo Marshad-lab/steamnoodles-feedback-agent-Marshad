@@ -53,12 +53,13 @@ def sentiment_trend(start_date: str, end_date: str, dataset_path="data/restauran
     plt.tight_layout()
 
     # Save chart
-    output_path = "outputs/sentiment_plot.png"
+    output_path = "output/sentiment_plot.png"
     plt.savefig(output_path)
-    print(f"📊 Sentiment trend chart saved to {output_path}")
+    print(f" Sentiment trend chart saved to {output_path}")
 
 if __name__ == "__main__":
     start = input("Enter start date (YYYY-MM-DD): ")
     end = input("Enter end date (YYYY-MM-DD): ")
     sentiment_trend(start, end)
+
 
