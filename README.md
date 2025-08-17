@@ -5,7 +5,7 @@
 This project automates the handling of customer feedback for the SteamNoodles restaurant chain using AI agents. One agent automatically responds to customer reviews by analyzing sentiment, while another generates sentiment trend visualizations over a user-selected date range.
 
 ## Technologies Used
-- Python 3.x
+- Python 3.12
 - LangChain
 - OpenAI GPT-3.5-turbo
 - pandas
