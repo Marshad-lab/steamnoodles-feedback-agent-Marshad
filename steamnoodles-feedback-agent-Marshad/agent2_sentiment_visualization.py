@@ -29,7 +29,7 @@ def classify_sentiment(review: str) -> str:
     result = chain.invoke({"review": review})
     return result.content.strip()
 
-def sentiment_trend(start_date: str, end_date: str, dataset_path="data/restaurant_reviews_sample.csv"):
+def sentiment_trend(start_date: str, end_date: str, dataset_path="data"):
     # Load dataset
     df = pd.read_csv(dataset_path)
     df["Date"] = pd.to_datetime(df["Date"])
@@ -61,5 +61,6 @@ if __name__ == "__main__":
     start = input("Enter start date (YYYY-MM-DD): ")
     end = input("Enter end date (YYYY-MM-DD): ")
     sentiment_trend(start, end)
+
 
 
