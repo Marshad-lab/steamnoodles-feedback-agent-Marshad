@@ -4,7 +4,7 @@ from langchain.prompts import PromptTemplate
 
 api_key = os.getenv("OPENAI_API_KEY")
 if not api_key:
-    raise ValueError("⚠️ Please set your OPENAI_API_KEY environment variable.")
+    raise ValueError(" Please set your OPENAI_API_KEY environment variable.")
 
 llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.7)
 
@@ -25,4 +25,5 @@ def get_feedback_response(review: str):
 if __name__ == "__main__":
     user_review = input("Enter customer review: ")
     response = get_feedback_response(user_review)
-    print("\n🤖 Auto-response:\n", response)
+
+    print("\nAuto-response:\n", response)
