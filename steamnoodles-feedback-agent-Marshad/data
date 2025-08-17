@@ -1,0 +1,7 @@
+review,sentiment,date
+"The noodles were amazing, loved the flavor!",positive,2025-08-17
+The service was slow and the food was cold.,negative,2025-08-16
+"It was okay, nothing special.",neutral,2025-08-15
+"Best ramen I’ve ever had, highly recommend!",positive,2025-08-14
+"Terrible experience, will not come back.",negative,2025-08-13
+Decent food but too expensive for the portion size.,neutral,2025-08-12
